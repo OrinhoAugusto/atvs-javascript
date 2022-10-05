@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        let n1 = parseFloat(prompt('Escreva o primeiro numero:'))
+        let n2 = parseFloat(prompt('Escreva o segundo numero:'))
+        
+        if (n1 > n2) {
+            document.write(`O maior numero e ${n1}`)
+        }
+
+        if (n2 > n1) {
+            document.write(`O maior numero e ${n2}`)
+        }
+
+    </script> 
+  </head>
+  <body>
+
+  </body>
+</html>
