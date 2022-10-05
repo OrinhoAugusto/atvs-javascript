@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        let n = parseInt(prompt('Digite um numero inteiro:'))
+
+        if (n < 0) {
+            document.write('Numero negativo.')
+        }
+
+        if (n == 0) {
+            document.write('Numero igual a zero.')
+        }
+
+        if (n > 0) {
+            document.write('Numero positivo.')
+        }
+
+    </script> 
+  </head>
+  <body>
+
+  </body>
+</html>
