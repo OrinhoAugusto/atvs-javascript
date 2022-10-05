@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        let n1 = parseFloat(prompt('Escreva a primeira nota do aluno:'))
+        let n2 = parseFloat(prompt('Escreva a segunda nota do aluno:'))
+        let media = (n1 + n2) / 2
+
+        if (media < 6.0) {
+            alert('Aluno foi convocado para exame.')
+            let exame = parseFloat(prompt('Escreva a nota do aluno no exame:'))
+            let novaMedia = (media + exame)/2
+
+            if (novaMedia < 6.0) {
+                document.write('Aluno reprovado.')
+            } else {
+                document.write('Aluno aprovado.')
+            }
+        } else {
+            document.write('Aluno aprovado.')
+        }
+
+    </script> 
+  </head>
+  <body>
+
+  </body>
+</html>
