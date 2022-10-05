@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        let sexo = prompt('Qual e o seu sexo? (Digite "M" para masculino e "F" para feminino)')
+        
+        if (sexo == "M" || sexo == "F") {
+
+            if (sexo == "F") {
+                document.write('Voce e uma mulher!')
+            }
+            if (sexo == "M") {
+                document.write('Voce e um homem!')
+            }
+        } else {
+            document.write('Sexo invalido.')
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
