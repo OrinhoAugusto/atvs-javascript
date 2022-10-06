@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        
+        let salario = parseFloat(prompt('Qual é o valor do seu salário?'))
+
+        if (salario <= 400) {
+            let reajuste = salario * 0.15
+            let novoSalario = salario + reajuste
+            document.write(`Novo salário: ${novoSalario} <br>Reajuste ganho: ${reajuste}`)  
+        }
+
+        if (salario > 400 && salario <= 800) {
+            let reajuste = salario * 0.12
+            let novoSalario = salario + reajuste
+            document.write(`Novo salário: ${novoSalario} <br>Reajuste ganho: ${reajuste}`)  
+        }
+
+        if (salario > 800 && salario <= 1200) {       
+            let reajuste = salario * 0.10
+            let novoSalario = salario + reajuste
+            document.write(`Novo salário: ${novoSalario} <br>Reajuste ganho: ${reajuste}`)  
+        }
+
+        if (salario > 1200 && salario <= 2000) {          
+            let reajuste = salario * 0.07
+            let novoSalario = salario + reajuste
+            document.write(`Novo salário: ${novoSalario} <br>Reajuste ganho: ${reajuste}`)  
+        }
+     
+        if (salario > 2000) {
+            let reajuste = salario * 0.04
+            let novoSalario = salario + reajuste
+            document.write(`Novo salário: ${novoSalario} <br>Reajuste ganho: ${reajuste}`)  
+        }
+
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
