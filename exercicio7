@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        let n1 = parseInt(prompt('Digite o primeiro número inteiro:'))
+        let n2 = parseInt(prompt('Digite o segundo número inteiro:'))
+
+        if (n2 % n1 == 0 || n1 % n2 == 0) {
+            document.write('São múltiplos.')
+        } else {
+            document.write('Não são múltiplos.')
+        }
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
