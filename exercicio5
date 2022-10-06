@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        let idade = parseInt(prompt('Qual é a sua idade?'))
+
+        if (idade <= 10) {
+            document.write('Resultado: Infantil.')
+        }
+        if (10 < idade && idade <= 13) {
+            document.write('Resultado: Infanto Juvenil.')
+        }
+        if (14 <= idade && idade <= 18) {
+            document.write('Resultado: Juvenil.')
+        }
+        if (18 < idade) {
+            document.write('Resultado: Adulto.')
+        }
+
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
