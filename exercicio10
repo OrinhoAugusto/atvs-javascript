@@ -2,64 +2,110 @@
 <html lang="pt-br">
 
 <head>
-  <title>Título da página</title>
-  <meta charset="utf-8">
-  <script>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        let q1 = prompt('Seu animal é vertebrado ou invertebrado? (Responda com 1 e 2, respectivamente)')
+        let q2
+        let q3
+        let animal
 
-    let q1 = prompt('Seu animal é vertebrado ou invertebrado? (Responda com 1 e 2, respectivamente)')
-    let q2;
-    let q3;
-    let animal;
+        if (q1 == 1 || q1 == 2) {
 
-    if (q1 == 1 || q1 == 2) {
+            if (q1 == 1) {
 
-      if (q1 == 1) {
+                q2 = prompt('Seu animal é uma ave ou um mamífero? (Responda com 1 e 2, respectivamente)')
 
-        q2 = prompt('Seu animal é uma ave ou um mamífero? (Responda com 1 e 2, respectivamente)')
+                if (q2 == 1 || q2 == 2) {
 
-        if (q2 == 1 || q1 == 2) {
+                    if (q2 == 1) {
 
-          if (q2 == 1) {
+                        q3 = prompt('Seu animal é carnívoro ou onívoro? (Responda com 1 e 2, respectivamente)')
 
-            q3 = prompt('Seu animal é carnívoro ou onívoro? (Responda com 1 e 2, respectivamente)')
+                        if (q3 == 1 || q3 == 2) {
+                            if (q3 == 1) {
+                                animal = 'Águia'
+                                document.write(animal)
+                            }
+                            if (q3 == 2) {
+                                animal = 'Pomba'
+                                document.write(animal)
+                            }
+                        } else {
+                            alert('Digite um valor válido.')
+                        }
+                    }
 
-            if (q3 == 1 || q3 == 2)
-              if (q3 == 1) {
-                animal = 'Águia'
+                    if (q2 == 2) {
+
+                        q3 = prompt('Seu animal é onívoro ou herbivoro? (Responda com 1 e 2, respectivamente)')
+
+                        if (q3 == 1 || q3 == 2) {
+                            if (q3 == 1) {
+                                animal = 'Homem'
+                                document.write(animal)
+                            }
+                            if (q3 == 2) {
+                                animal = 'Vaca'
+                                document.write(animal)
+                            }
+                        } else {
+                            alert('Digite um valor válido.')
+                        }
+                    }
+                } else {
+                    alert('Digite um valor válido.')
+                }
             }
-              if (q3 == 2) {
-                animal = 'Pomba'
+            if (q1 == 2) {
+
+                q2 = prompt('Seu animal é um inseto ou anelideo? (Responda com 1 e 2, respectivamente)')
+
+                if (q2 == 1 || q2 == 2) {
+
+                    if (q2 == 1) {
+
+                        q3 = prompt('Seu animal é hematofago ou herbívoro? (Responda com 1 e 2, respectivamente)')
+
+                        if (q3 == 1 || q3 == 2) {
+                            if (q3 == 1) {
+                                animal = 'Pulga'
+                                document.write(animal)
+                            }
+                            if (q3 == 2) {
+                                animal = 'Lagarta'
+                                document.write(animal)
+                            }
+                        } else {
+                            alert('Digite um valor válido.')
+                        }
+                    }
+
+                    if (q2 == 2) {
+
+                        q3 = prompt('Seu animal é hematofago ou onivoro? (Responda com 1 e 2, respectivamente)')
+
+                        if (q3 == 1 || q3 == 2) {
+                            if (q3 == 1) {
+                                animal = 'Sanguessuga'
+                                document.write(animal)
+                            }
+                            if (q3 == 2) {
+                                animal = 'Minhoca'
+                                document.write(animal)
+                            }
+                        } else {
+                            alert('Digite um valor válido.')
+                        }
+                    }
+                } else {
+                    alert('Digite um valor válido.')
+                }
             }
-
-          }
-
-          if (q2 == 2) {
-
-            q3 = prompt('Seu animal é onívoro ou herbivoro? (Responda com 1 e 2, respectivamente)')
-
-            if (q3 == 1 || q3 == 2) {
-              if (q3 == 1) {
-                animal = 'Homem'
-              }
-              if (q3 == 2) {
-                animal = 'Vaca'
-              }
-            }
-          }
-
-
         } else {
-          alert('Digite um valor válido.')
-          return
+            alert('Digite um valor válido.')
         }
-      }
-
-    } else {
-      alert('Digite um valor válido.')
-      return
-    }
-    
-  </script>
+    </script>
 </head>
 
 <body>
