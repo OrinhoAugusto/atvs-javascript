@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <script>
+        let inicial = parseInt(prompt('Que horas começou o jogo?'))
+        let final = parseInt(prompt('Quando terminou o jogo?'))
+        let duracao;
+        if(final > inicial){
+            duracao = final - inicial
+        } else {
+            duracao = (24 - inicial) + final
+        }
+
+        document.write(`O JOGO DUROU ${duracao} HORAS.`)
+
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
